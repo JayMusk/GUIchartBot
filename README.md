@@ -18,6 +18,7 @@ This section documents the UI layout on `Form1` and explains the code in `Form1.
 - `textBox2` — single-line input where the user types messages to send to the bot.
 - `button1` — plays the greeting sound and writes a hello message to the chat log.
 - `button2` — sends the message currently in `textBox2` to the bot and clears the input.
+- `button3` — clears the dialog on the 'textbox1'
 
 ### Key methods and behavior (`Form1.cs`)
 
@@ -43,7 +44,7 @@ This section documents the UI layout on `Form1` and explains the code in `Form1.
 - Event handlers
   - `button1_Click` — replays greeting and appends a `Bot: Hello` message to `textBox1`.
   - `button2_Click` — appends `Bot: <input>` to `textBox1`, calls `Response(...)`, and clears `textBox2`.
-
+  - `button3-Click` — clears `textBox3`
 ### Resources and paths
 The current implementation uses absolute file paths:
 - `C:\Users\Student\source\repos\GUIchartBot\Resourse\chartbot.wav`

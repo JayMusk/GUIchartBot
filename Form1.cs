@@ -44,7 +44,6 @@ namespace GUIChartBot
                     var responses = KeywordResponse[keyword];
                     response = responses[random.Next(responses.Count)];
                     Console.Write(response);
-                    Thread.Sleep(15);
                     break;
                 }
             }
@@ -54,12 +53,12 @@ namespace GUIChartBot
                 {
                     response = "It's okay to feel worried sometimes. Remember to take deep breaths and focus on positive thoughts.";
                     Console.Write(response);
-                    Thread.Sleep(15);
                     break;
                 }
             }
           
-            textBox1.AppendText("Chatbot: " + response + Environment.NewLine);
+            textBox1.AppendText("Bot: " + response + Environment.NewLine);
+            textBox1.AppendText("");
         }
         public void Form1_Load(object sender, EventArgs e)
         {
@@ -86,7 +85,7 @@ namespace GUIChartBot
 
         public void button2_Click(object sender, EventArgs e)
         {
-            textBox1.AppendText("Bot: " + textBox2.Text + Environment.NewLine);    
+            textBox1.AppendText("You: " + textBox2.Text + Environment.NewLine);    
             Response(textBox2.Text);
             textBox2.Clear();
         }
@@ -94,6 +93,10 @@ namespace GUIChartBot
         public void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+        private void button3_Click(object sender, EventArgs e)
+        {
+            textBox1.Clear();   
         }
     }
 }

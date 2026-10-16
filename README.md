@@ -14,6 +14,7 @@ This section documents the UI layout on `Form1` and explains the code in `Form1.
 `Form1` implements a small rule-based chatbot UI that plays a greeting sound and displays a logo image on load. The form contains the following controls (names used in code):
 
 - `pictureBox1` — displays the application logo (loaded via `Display_Logo`).
+- `pictureBox2` — displays the application online session.
 - `textBox1` — multi-line chat log where bot responses and messages are appended.
 - `textBox2` — single-line input where the user types messages to send to the bot.
 - `button1` — plays the greeting sound and writes a hello message to the chat log.
